@@ -17,3 +17,13 @@ def sumatoria(lista: [int]) -> int:
     for i in lista:
         suma += i
     return suma
+
+def interseccion_listas(l1: list, l2: list) -> bool:
+    salida = False
+    for i in l1:
+        if i in l2:
+            salida = True
+            break
+        else:
+            continue
+    return salida
