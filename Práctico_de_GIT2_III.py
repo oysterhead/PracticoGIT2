@@ -15,16 +15,16 @@ class Lista:
             producto = producto * i
         return producto
 
+def prod_de_lista():
+    l = Lista ()
 
-l = Lista ()
+    item = int(input("Ingrese la cantidad de numero que quiera multiplicar (con 0 termina): "))
+    while item != 0:
+        l.incluir(item)
+        item = int(input("Siguiente numero (con 0 sale): "))
 
-item = int(input("Ingrese la cantidad de numero que quiera multiplicar (con 0 termina): "))
-while item != 0:
-    l.incluir(item)
-    item = int(input("Siguiente numero (con 0 sale): "))
+    valor = l.multiplicar()
 
-valor = l.multiplicar()
-
-print("El PRODUCTO de la lista es: ", valor)
+    print("El PRODUCTO de la lista es: ", valor)
 
 #Ejercicio Par Nro 3.-
